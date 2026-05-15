@@ -1,4 +1,4 @@
-Preplaning.  Would it be easier to use Streamlit or something similar to help with this?
+Preplanning.  Would it be easier to use Streamlit or something similar to help with this?
 This will be a simple browser for sorting through folders full of images and videos.
 There will be a "Settings" tab where the user can add an arbitrary number of "destination" folders.
 From the "View" tab the user will be able to move files to any of these pre-selected folders with a single click.
