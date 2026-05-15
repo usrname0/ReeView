@@ -26,10 +26,18 @@ first-class video playback.
 - **Persistent settings.** Source folder, destinations, window geometry, loop
   toggle, mute toggle, and skip step all survive across restarts.
 
-## Installation
+## Installation & Running
 
 ReeView targets Python 3.10+ (developed against 3.13) on Windows, macOS, and
 Linux. PySide6 is the only runtime dependency.
+
+Just use the launcher for your platform — on first run it creates a venv and
+installs requirements, then starts the app. Subsequent runs reuse the venv.
+
+- **Windows:** double-click `run.bat` or run it from a shell.
+- **macOS / Linux:** `./run.sh` (run `chmod +x run.sh` once if needed).
+
+If you'd rather set it up by hand:
 
 ```bash
 # from the repo root
@@ -37,17 +45,8 @@ python -m venv venv
 venv\Scripts\activate          # Windows
 # source venv/bin/activate     # macOS / Linux
 pip install -r requirements.txt
+python -m reeview
 ```
-
-## Running
-
-Once the venv is set up, use the launcher for your platform:
-
-- **Windows:** double-click `run.bat` or run it from a shell.
-- **macOS / Linux:** `./run.sh` (run `chmod +x run.sh` once if needed).
-
-Either launcher just activates the venv and runs `python -m reeview`, so you
-can do that directly too.
 
 ## Usage
 
